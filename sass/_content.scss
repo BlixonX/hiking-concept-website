@@ -1,0 +1,21 @@
+.content {
+  position: relative;
+  min-height: max-content;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgb(238, 238, 238);
+  box-sizing: border-box;
+  overflow: hidden;
+
+  box-shadow: 5px  0 10px rgb(0 0 0 / 15%),
+              -5px 0 10px rgb(0 0 0 / 15%);
+}
+
+$big-screen-resolution: 1440px;
+@media screen and (min-width: $big-screen-resolution) {
+  $side-margin: calc(calc(100% - $big-screen-resolution) / 2);
+  .content {
+    margin: 0 $side-margin;
+  }
+}
