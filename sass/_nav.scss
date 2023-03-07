@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 0;
+  z-index: 1;
   width: 100%;
   font-size: 1rem;
   padding: 1.88em 0.94em 0 4.56em;
@@ -19,8 +19,8 @@
   display: flex;
   width: max-content;
   align-items: center;
-  color: #54524f;
-  font-weight: bold;
+  color: $text-dark-gray;
+  font-weight: $bold;
   text-transform: uppercase;
   letter-spacing: 2px;
 }

@@ -1,0 +1,53 @@
+.header {
+  position: relative;
+}
+
+.header__background {
+  display: block;
+  width: 100%;
+}
+
+.header__text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  width: 40%;
+  margin: auto 70px;
+}
+
+.header__text h1 {
+  font-size: 5.75rem;
+  color: #deb37e;
+  font-weight: $extrabold;
+  text-shadow: 3px -3px 3px rgb(0 0 0 / 15%);
+}
+
+.header__text h3 {
+  font-weight: $bold;
+  font-style: italic;
+  color: $text-dark-gray;
+  letter-spacing: 4px;
+  font-size: 1.4rem;
+}
+
+.header__text button {
+  height: 45px;
+  width: 210px;
+  margin-top: 55px;
+  background-color: #fefdfd;
+  border-radius: 100px;
+  border: none;
+  color: #776c64;
+  font-weight: $extrabold;
+  font-size: 1.56rem;
+}
+
+.header__text blockquote {
+  margin-top: 30px;
+  font-style: italic;
+  font-size: 1.28rem;
+  padding-right: 50px;
+}
