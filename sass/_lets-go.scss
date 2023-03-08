@@ -1,0 +1,28 @@
+.lets-go {
+  position: relative;
+  background-color: white;
+  height: 500px; // Temporary value
+  z-index: 0;
+}
+
+.lets-go__shred {
+  position: absolute;
+  top: -150px;
+  width: 100%;
+  z-index: -1;
+}
+
+.lets-go__title {
+  text-align: center;
+  font-size: 3.24rem;
+  font-weight: $extrabold;
+  color: $indian-yellow;
+  margin-bottom: 35px;
+}
+
+.lets-go__desc {
+  text-align: center;
+  margin: 0 30%;
+  font-size: 1.2rem;
+  color: #7f7770;
+}
