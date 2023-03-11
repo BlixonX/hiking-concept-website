@@ -130,8 +130,8 @@
 .lets-go {
   position: relative;
   background-color: white;
-  height: 500px;
   z-index: 0;
+  padding-bottom: 200px;
 }
 
 .lets-go__shred {
@@ -139,6 +139,7 @@
   top: -150px;
   width: 100%;
   z-index: -1;
+  filter: drop-shadow(0 -7px 3px rgba(0, 0, 0, 0.15));
 }
 
 .lets-go__title {
@@ -154,6 +155,54 @@
   margin: 0 30%;
   font-size: 1.2rem;
   color: #7f7770;
+}
+
+.lets-go__cards {
+  display: flex;
+  width: min-content;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.lets-go__card {
+  width: 340px;
+  height: 528px;
+  background-color: #7f7770;
+  margin: 0 40px;
+  color: white;
+}
+.lets-go__card img {
+  width: 100%;
+}
+.lets-go__card h5 {
+  font-weight: 700;
+  font-size: 29px;
+  margin: 40px 0 20px 15px;
+}
+.lets-go__card p {
+  font-weight: 400;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.lets-go__more {
+  display: block;
+  width: 334px;
+  height: 74px;
+  background-color: #7f7770;
+  border-radius: 200px;
+  border: none;
+  font-weight: 800;
+  font-size: 20px;
+  color: white;
+  margin: 0 auto;
+}
+
+.lets-go__shadow {
+  position: absolute;
+  bottom: 5px;
 }
 
 * {

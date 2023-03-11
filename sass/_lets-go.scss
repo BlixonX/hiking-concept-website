@@ -1,8 +1,9 @@
 .lets-go {
   position: relative;
   background-color: white;
-  height: 500px; // Temporary value
+  // height: 500px; // Temporary value
   z-index: 0;
+  padding-bottom: 200px;
 }
 
 .lets-go__shred {
@@ -10,13 +11,14 @@
   top: -150px;
   width: 100%;
   z-index: -1;
+  filter: drop-shadow(0 -7px 3px rgb(0 0 0 / 15%));
 }
 
 .lets-go__title {
   text-align: center;
   font-size: 3.24rem;
   font-weight: $extrabold;
-  color: $indian-yellow;
+  color: $color-indian-yellow;
   margin-bottom: 35px;
 }
 
@@ -24,5 +26,56 @@
   text-align: center;
   margin: 0 30%;
   font-size: 1.2rem;
-  color: #7f7770;
+  color: $color-settlement;
+}
+
+.lets-go__cards {
+  display: flex;
+  width: min-content;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.lets-go__card {
+  width: 340px;
+  height: 528px;
+  background-color: $color-settlement;
+  margin: 0 40px;
+  color: white;
+
+  & img {
+    width: 100%;
+  }
+
+  & h5 {
+    font-weight: $bold;
+    font-size: 29px;
+    margin: 40px 0 20px 15px;
+  }
+
+  & p {
+    font-weight: $regular;
+    margin-left: 15px;
+    font-size: 20px;
+  }
+}
+
+.lets-go__more {
+  display: block;
+  width: 334px;
+  height: 74px;
+  background-color: $color-settlement;
+  border-radius: 200px;
+  border: none;
+  font-weight: $extrabold;
+  font-size: 20px;
+  color: white;
+  margin: 0 auto;
+}
+
+.lets-go__shadow {
+  position: absolute;
+  bottom: 5px;
 }
