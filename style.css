@@ -203,16 +203,62 @@
 .lets-go__shadow {
   position: absolute;
   bottom: 5px;
+  pointer-events: none;
+}
+
+.promo__block {
+  display: flex;
+  height: 780px;
+  color: white;
+}
+
+.settlement {
+  background-color: #7f7770;
+}
+
+.bran {
+  background-color: #deb37e;
+}
+
+.promo__block-image {
+  height: 100%;
+}
+
+.promo__block-promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 0 100px 0 75px;
+}
+
+.promo__block-heading {
+  font-size: 3.13rem;
+  font-weight: 700;
+}
+
+.promo__block-desc {
+  font-size: 1.38rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.promo__block-more {
+  width: 275px;
+  height: 60px;
+  background-color: #e2a355;
+  border-radius: 200px;
+  border: none;
+  font-size: 1.56rem;
+  font-weight: 700;
+  color: inherit;
+  letter-spacing: 5px;
 }
 
 * {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-}
-
-body {
-  height: 200vw;
 }
 
 /*# sourceMappingURL=style.css.map */

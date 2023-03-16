@@ -1,0 +1,51 @@
+.promo {
+}
+
+.promo__block {
+  display: flex;
+  height: 780px;
+  color: white;
+}
+
+.settlement {
+  background-color: $color-settlement;
+}
+
+.bran {
+  background-color: $color-bran;
+}
+
+.promo__block-image {
+  height: 100%;
+}
+
+.promo__block-promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 0 100px 0 75px;
+}
+
+.promo__block-heading {
+  font-size: 3.13rem;
+  font-weight: $bold;
+}
+
+.promo__block-desc {
+  font-size: 1.38rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.promo__block-more {
+  width: 275px;
+  height: 60px;
+  background-color: $color-indian-yellow;
+  border-radius: 200px;
+  border: none;
+  font-size: 1.56rem;
+  font-weight: $bold;
+  color: inherit;
+  letter-spacing: 5px;
+}

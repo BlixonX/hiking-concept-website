@@ -1,7 +1,6 @@
 .lets-go {
   position: relative;
   background-color: white;
-  // height: 500px; // Temporary value
   z-index: 0;
   padding-bottom: 200px;
 }
@@ -78,4 +77,5 @@
 .lets-go__shadow {
   position: absolute;
   bottom: 5px;
+  pointer-events: none;
 }
