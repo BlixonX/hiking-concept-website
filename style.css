@@ -255,6 +255,48 @@
   letter-spacing: 5px;
 }
 
+.hiking__text {
+  position: relative;
+  height: 770px;
+  background-color: #99928d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hiking__text-heading {
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.hiking__text-paragraph {
+  margin: 0 30%;
+  font-size: 19px;
+  text-align: center;
+  color: #dbdbdb;
+}
+
+.hiking__text-shred--top {
+  position: absolute;
+  top: 0;
+}
+
+.hiking__text-shred--bottom {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  filter: drop-shadow(0 -7px 3px rgba(0, 0, 0, 0.15));
+}
+
+.hiking__text-shadow {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+}
+
 * {
   margin: 0;
   padding: 0;
