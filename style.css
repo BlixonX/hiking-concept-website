@@ -267,14 +267,14 @@
 }
 
 .hiking__text-heading {
-  font-size: 35px;
+  font-size: 2.19rem;
   margin-bottom: 20px;
   font-weight: 600;
 }
 
 .hiking__text-paragraph {
   margin: 0 30%;
-  font-size: 19px;
+  font-size: 1.19rem;
   text-align: center;
   color: #dbdbdb;
 }
@@ -289,12 +289,35 @@
   bottom: 0;
   transform: translateY(50%);
   filter: drop-shadow(0 -7px 3px rgba(0, 0, 0, 0.15));
+  z-index: 1;
 }
 
 .hiking__text-shadow {
   position: absolute;
   left: 0;
   pointer-events: none;
+}
+
+.hiking__explore {
+  display: flex;
+  position: relative;
+  background: url("../assets/hiking/background-explore.png") no-repeat center;
+  height: 900px;
+  justify-content: right;
+  align-items: center;
+  padding-right: 110px;
+}
+
+.hiking__explore-text {
+  text-align: right;
+  font-style: italic;
+  color: #54524f;
+  text-shadow: 3px -3px 3px rgba(0, 0, 0, 0.15);
+  font-size: 4.69rem;
+  font-weight: 800;
+}
+.hiking__explore-text--bran {
+  color: #deb37e;
 }
 
 * {

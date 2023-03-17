@@ -35,10 +35,34 @@
   bottom: 0;
   transform: translateY(50%);
   filter: drop-shadow(0 -7px 3px rgb(0 0 0 / 15%));
+  z-index: 1;
 }
 
 .hiking__text-shadow {
   position: absolute;
   left: 0;
   pointer-events: none;
+}
+
+.hiking__explore {
+  display: flex;
+  position: relative;
+  background: url("../assets/hiking/background-explore.png") no-repeat center;
+  height: 900px;
+  justify-content: right;
+  align-items: center;
+  padding-right: 110px;
+}
+
+.hiking__explore-text {
+  text-align: right;
+  font-style: italic;
+  color: $color-dark-gray;
+  text-shadow: 3px -3px 3px rgb(0 0 0 / 15%);
+  font-size: 4.69rem;
+  font-weight: $extrabold;
+
+  &--bran {
+    color: $color-bran;
+  }
 }
