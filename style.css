@@ -270,6 +270,9 @@
   text-decoration: none;
 }
 
+/******************\
+  TEXT SUB-SECTION
+\******************/
 .hiking__text {
   position: relative;
   height: 770px;
@@ -299,7 +302,7 @@
   top: 0;
 }
 
-.hiking__text-shred--bottom {
+.hiking__text-shred--middle {
   position: absolute;
   bottom: 0;
   transform: translateY(50%);
@@ -313,6 +316,9 @@
   pointer-events: none;
 }
 
+/*********************\
+  EXPLORE SUB-SECTION
+\*********************/
 .hiking__explore {
   display: flex;
   position: relative;
@@ -333,6 +339,66 @@
 }
 .hiking__explore-text--bran {
   color: #deb37e;
+}
+
+/*******************\
+  DESC SUB-SECTION
+\*******************/
+.hiking__desc {
+  position: relative;
+  background-color: white;
+}
+
+.hiking__desc-shred {
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.hiking__desc-traits {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
+.hiking__desc-trait {
+  width: 30%;
+}
+.hiking__desc-trait h4 {
+  font-size: 1.763rem;
+  color: #deb37e;
+  margin-bottom: 20px;
+}
+.hiking__desc-trait p {
+  color: #333d42;
+}
+
+.hiking__desc-quote {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 450px;
+  text-align: center;
+  color: #3f3f3f;
+}
+.hiking__desc-quote h3 {
+  font-size: 70px;
+  font-weight: 700;
+}
+.hiking__desc-quote p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.hiking__desc-quote h6 {
+  margin-top: 35px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.hiking__desc-shadow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 * {
