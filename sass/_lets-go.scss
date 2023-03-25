@@ -50,28 +50,30 @@
 
   & h5 {
     font-weight: $bold;
-    font-size: 29px;
+    font-size: 1.813rem;
     margin: 40px 0 20px 15px;
   }
 
   & p {
     font-weight: $regular;
     margin-left: 15px;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
 .lets-go__more {
   display: block;
   width: 334px;
-  height: 74px;
   background-color: $color-settlement;
   border-radius: 200px;
   border: none;
   font-weight: $extrabold;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: white;
+  padding: 25px 0;
   margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
 }
 
 .lets-go__shadow {

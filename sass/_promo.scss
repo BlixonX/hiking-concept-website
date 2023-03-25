@@ -40,7 +40,7 @@
 
 .promo__block-more {
   width: 275px;
-  height: 60px;
+  padding: 16px 0;
   background-color: $color-indian-yellow;
   border-radius: 200px;
   border: none;
@@ -48,4 +48,6 @@
   font-weight: $bold;
   color: inherit;
   letter-spacing: 5px;
+  text-align: center;
+  text-decoration: none;
 }
