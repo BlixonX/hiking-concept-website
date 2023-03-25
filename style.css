@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .content {
   position: relative;
   min-height: max-content;
@@ -355,6 +356,7 @@
   bottom: 100%;
   width: 100%;
   z-index: 1;
+  filter: drop-shadow(0 -7px 3px rgba(0, 0, 0, 0.15));
 }
 
 .hiking__desc-traits {
@@ -370,6 +372,7 @@
   font-size: 1.763rem;
   color: #deb37e;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 .hiking__desc-trait p {
   color: #333d42;
@@ -470,10 +473,73 @@
   color: white;
 }
 
+.footer {
+  display: flex;
+  height: 800px;
+  background-color: #7f7770;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: 157.5px;
+}
+.footer * {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.footer__content {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer__content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.footer__content p {
+  font-size: 1rem;
+}
+.footer__content ul {
+  list-style-type: none;
+}
+.footer__content li {
+  margin-bottom: 5px;
+}
+.footer__content li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__content-socials {
+  margin-right: 80px;
+  font-style: normal;
+  width: 320px;
+}
+.footer__content-socials ul {
+  margin-top: 20px;
+}
+.footer__content-socials li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer__content-socials li img {
+  height: 35px;
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: underline black;
+  padding: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */

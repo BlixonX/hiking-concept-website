@@ -21,7 +21,7 @@
 }
 
 .email {
-  & h2 {
+  h2 {
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -30,7 +30,7 @@
     font-size: 3.75rem;
     color: white;
   }
-  & p {
+  p {
     text-align: center;
     color: $color-dark-gray;
     font-size: 1.375rem;
@@ -49,7 +49,7 @@
   margin-top: 55px;
   overflow: hidden;
 
-  & input {
+  input {
     border: none;
     flex-grow: 1;
     padding-left: 30px;
@@ -60,7 +60,7 @@
     }
   }
 
-  & button {
+  button {
     border: none;
     width: 180px;
     background-color: $color-dark-gray;
