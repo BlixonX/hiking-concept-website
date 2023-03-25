@@ -27,13 +27,13 @@
     text-align: center;
     margin-top: 250px;
     margin-bottom: 55px;
-    font-size: 60px;
+    font-size: 3.75rem;
     color: white;
   }
   & p {
     text-align: center;
     color: $color-dark-gray;
-    font-size: 22px;
+    font-size: 1.375rem;
     width: 50%;
     margin: 0 auto;
   }
@@ -53,7 +53,7 @@
     border: none;
     flex-grow: 1;
     padding-left: 30px;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: $color-dark-gray;
     &:focus-visible {
       outline: none;
@@ -66,7 +66,7 @@
     background-color: $color-dark-gray;
     border-radius: 100px 0 0 100px;
     font-weight: $bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: white;
   }
 }
