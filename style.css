@@ -347,6 +347,7 @@
 .hiking__desc {
   position: relative;
   background-color: white;
+  z-index: 1;
 }
 
 .hiking__desc-shred {
@@ -399,6 +400,74 @@
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.email {
+  position: relative;
+  height: 800px;
+  background-color: #deb37e;
+  z-index: 0;
+}
+
+.email__shred {
+  width: 100%;
+}
+.email__shred--top {
+  position: absolute;
+  bottom: 100%;
+  transform: translateY(50%);
+}
+.email__shred--middle {
+  position: absolute;
+  top: 100%;
+  transform: translateY(-50%);
+}
+
+.email h2 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 250px;
+  margin-bottom: 55px;
+  font-size: 60px;
+  color: white;
+}
+.email p {
+  text-align: center;
+  color: #54524f;
+  font-size: 22px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.email__input {
+  width: 50%;
+  height: 50px;
+  background-color: white;
+  border-radius: 100px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 55px;
+  overflow: hidden;
+}
+.email__input input {
+  border: none;
+  flex-grow: 1;
+  padding-left: 30px;
+  font-size: 20px;
+  color: #54524f;
+}
+.email__input input:focus-visible {
+  outline: none;
+}
+.email__input button {
+  border: none;
+  width: 180px;
+  background-color: #54524f;
+  border-radius: 100px 0 0 100px;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
 }
 
 * {
