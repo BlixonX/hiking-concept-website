@@ -23,6 +23,7 @@
   font-weight: $bold;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-size: 1.0625rem;
 
   li {
     position: relative;
@@ -38,11 +39,12 @@
 
 .nav__links-search {
   position: relative;
-  width: 155px;
+  width: 185px;
   height: 50px;
   background-color: #c3bfbc;
   border-radius: 100px;
   border: none;
+  margin-left: 10px;
 
   & + button {
     position: absolute;

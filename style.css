@@ -43,6 +43,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-size: 1.0625rem;
 }
 .nav__links li {
   position: relative;
@@ -56,11 +57,12 @@
 
 .nav__links-search {
   position: relative;
-  width: 155px;
+  width: 185px;
   height: 50px;
   background-color: #c3bfbc;
   border-radius: 100px;
   border: none;
+  margin-left: 10px;
 }
 .nav__links-search + button {
   position: absolute;
@@ -114,11 +116,11 @@
   font-style: italic;
   color: #54524f;
   letter-spacing: 4px;
-  font-size: 1.4rem;
+  font-size: 1.5625rem;
 }
 
 .header__text a {
-  width: 210px;
+  width: 225px;
   padding: 10px 0;
   margin-top: 55px;
   background-color: #fefdfd;
@@ -126,7 +128,7 @@
   border: none;
   color: #776c64;
   font-weight: 800;
-  font-size: 1.56rem;
+  font-size: 1.5625rem;
   text-align: center;
   text-decoration: none;
 }
@@ -134,7 +136,7 @@
 .header__text blockquote {
   margin-top: 30px;
   font-style: italic;
-  font-size: 1.28rem;
+  font-size: 1.3125rem;
   padding-right: 50px;
   color: #54524f;
 }
@@ -156,7 +158,7 @@
 
 .lets-go__title {
   text-align: center;
-  font-size: 3.24rem;
+  font-size: 3.9375rem;
   font-weight: 800;
   color: #e2a355;
   margin-bottom: 35px;
@@ -164,15 +166,15 @@
 
 .lets-go__desc {
   text-align: center;
-  margin: 0 30%;
-  font-size: 1.2rem;
+  margin: 0 350px;
+  font-size: 1.6875rem;
   color: #7f7770;
 }
 
 .lets-go__cards {
   display: flex;
   width: min-content;
-  margin-top: 80px;
+  margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
@@ -190,25 +192,25 @@
 }
 .lets-go__card h5 {
   font-weight: 700;
-  font-size: 1.813rem;
+  font-size: 1.8125rem;
   margin: 40px 0 20px 15px;
 }
 .lets-go__card p {
   font-weight: 400;
   margin-left: 15px;
-  font-size: 1.25rem;
+  font-size: 1.4375rem;
 }
 
 .lets-go__more {
   display: block;
-  width: 334px;
+  width: 335px;
   background-color: #7f7770;
   border-radius: 200px;
   border: none;
   font-weight: 800;
-  font-size: 1.25rem;
+  font-size: 1.4375rem;
   color: white;
-  padding: 25px 0;
+  padding: 22px 0;
   margin: 0 auto;
   text-align: center;
   text-decoration: none;
@@ -224,6 +226,9 @@
   display: flex;
   height: 780px;
   color: white;
+}
+.promo__block:first-of-type .promo__block-more {
+  font-size: 1.8125rem;
 }
 
 .settlement {
@@ -243,27 +248,30 @@
   flex-direction: column;
   justify-content: center;
   flex-grow: 1;
+  padding: 0 75px 0 100px;
+}
+img + .promo__block-promo {
   padding: 0 100px 0 75px;
 }
 
 .promo__block-heading {
-  font-size: 3.13rem;
+  font-size: 3.625rem;
   font-weight: 700;
 }
 
 .promo__block-desc {
-  font-size: 1.38rem;
+  font-size: 1.8125rem;
   margin-top: 30px;
   margin-bottom: 20px;
 }
 
 .promo__block-more {
-  width: 275px;
+  width: 325px;
   padding: 16px 0;
   background-color: #e2a355;
   border-radius: 200px;
   border: none;
-  font-size: 1.56rem;
+  font-size: 1.4375rem;
   font-weight: 700;
   color: inherit;
   letter-spacing: 5px;
@@ -276,7 +284,7 @@
 \******************/
 .hiking__text {
   position: relative;
-  height: 770px;
+  height: 1000px;
   background-color: #99928d;
   display: flex;
   flex-direction: column;
@@ -286,14 +294,15 @@
 }
 
 .hiking__text-heading {
-  font-size: 2.19rem;
-  margin-bottom: 20px;
+  font-size: 3.625rem;
+  margin-bottom: 30px;
   font-weight: 600;
 }
 
 .hiking__text-paragraph {
-  margin: 0 30%;
-  font-size: 1.19rem;
+  margin: 0 auto;
+  padding: 0 250px;
+  font-size: 1.8125rem;
   text-align: center;
   color: #dbdbdb;
 }
@@ -324,22 +333,25 @@
   display: flex;
   position: relative;
   background: url("../assets/hiking/background-explore.png") no-repeat center;
-  height: 900px;
+  height: 1200px;
   justify-content: right;
   align-items: center;
-  padding-right: 110px;
+  padding-right: 100px;
 }
 
 .hiking__explore-text {
+  margin-top: 50px;
   text-align: right;
   font-style: italic;
   color: #54524f;
   text-shadow: 3px -3px 3px rgba(0, 0, 0, 0.15);
-  font-size: 4.69rem;
+  font-size: 5rem;
   font-weight: 800;
+  line-height: 120%;
 }
 .hiking__explore-text--bran {
   color: #deb37e;
+  font-size: 4.75rem;
 }
 
 /*******************\
@@ -369,47 +381,50 @@
   width: 30%;
 }
 .hiking__desc-trait h4 {
-  font-size: 1.763rem;
+  font-size: 2.0625rem;
   color: #deb37e;
   margin-bottom: 20px;
   font-weight: 700;
 }
 .hiking__desc-trait p {
+  font-size: 1.1875rem;
   color: #333d42;
 }
 
 .hiking__desc-quote {
-  width: 55%;
+  padding: 0 280px;
   margin: 0 auto;
-  margin-top: 450px;
+  margin-top: 200px;
   text-align: center;
   color: #3f3f3f;
 }
 .hiking__desc-quote h3 {
-  font-size: 4.375rem;
+  font-size: 6.25rem;
   font-weight: 700;
 }
 .hiking__desc-quote p {
-  font-size: 1.25rem;
+  font-size: 1.5625rem;
   font-weight: 600;
 }
 .hiking__desc-quote h6 {
   margin-top: 35px;
-  font-size: 1.063rem;
+  font-size: 1.3125rem;
   font-weight: 700;
 }
 
 .hiking__desc-shadow {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -100px;
 }
 
 .email {
   position: relative;
-  height: 800px;
+  height: 1000px;
   background-color: #deb37e;
   z-index: 0;
+  display: grid;
+  place-content: center;
 }
 
 .email__shred {
@@ -426,26 +441,29 @@
   transform: translateY(-50%);
 }
 
-.email h2 {
+.email__content {
+  margin: 0 270px;
+}
+.email__content h2 {
   display: inline-block;
   width: 100%;
   text-align: center;
-  margin-top: 250px;
   margin-bottom: 55px;
-  font-size: 3.75rem;
+  font-size: 4.6875rem;
   color: white;
 }
-.email p {
+.email__content p {
   text-align: center;
   color: #54524f;
-  font-size: 1.375rem;
-  width: 50%;
+  font-size: 1.875rem;
+  width: 100%;
+  text-align: center;
   margin: 0 auto;
 }
 
 .email__input {
-  width: 50%;
-  height: 50px;
+  width: 85%;
+  height: 60px;
   background-color: white;
   border-radius: 100px;
   margin: 0 auto;
@@ -457,7 +475,7 @@
   border: none;
   flex-grow: 1;
   padding-left: 30px;
-  font-size: 1.25rem;
+  font-size: 1.5625rem;
   color: #54524f;
 }
 .email__input input:focus-visible {
@@ -469,13 +487,13 @@
   background-color: #54524f;
   border-radius: 100px 0 0 100px;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.5625rem;
   color: white;
 }
 
 .footer {
   display: flex;
-  height: 800px;
+  height: 720px;
   background-color: #7f7770;
   align-items: center;
   justify-content: center;
@@ -488,22 +506,24 @@
 }
 
 .footer__content {
-  width: 60%;
+  width: 100%;
+  padding: 0 90px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .footer__content h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 .footer__content p {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 .footer__content ul {
   list-style-type: none;
 }
 .footer__content li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 .footer__content li a {
   text-decoration: none;
@@ -513,7 +533,7 @@
 .footer__content-socials {
   margin-right: 80px;
   font-style: normal;
-  width: 320px;
+  width: 400px;
 }
 .footer__content-socials ul {
   margin-top: 20px;
@@ -524,6 +544,11 @@
 }
 .footer__content-socials li img {
   height: 35px;
+}
+
+.flex {
+  display: flex;
+  gap: 30px;
 }
 
 * {

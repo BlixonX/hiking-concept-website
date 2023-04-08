@@ -7,7 +7,7 @@
 
 .hiking__text {
   position: relative;
-  height: 770px;
+  height: 1000px;
   background-color: #99928d;
   display: flex;
   flex-direction: column;
@@ -17,14 +17,15 @@
 }
 
 .hiking__text-heading {
-  font-size: 2.19rem;
-  margin-bottom: 20px;
+  font-size: 3.625rem;
+  margin-bottom: 30px;
   font-weight: $semibold;
 }
 
 .hiking__text-paragraph {
-  margin: 0 30%;
-  font-size: 1.19rem;
+  margin: 0 auto;
+  padding: 0 250px;
+  font-size: 1.8125rem;
   text-align: center;
   color: #dbdbdb;
 }
@@ -56,22 +57,25 @@
   display: flex;
   position: relative;
   background: url("../assets/hiking/background-explore.png") no-repeat center;
-  height: 900px;
+  height: 1200px;
   justify-content: right;
   align-items: center;
-  padding-right: 110px;
+  padding-right: 100px;
 }
 
 .hiking__explore-text {
+  margin-top: 50px;
   text-align: right;
   font-style: italic;
   color: $color-dark-gray;
   text-shadow: 3px -3px 3px rgb(0 0 0 / 15%);
-  font-size: 4.69rem;
+  font-size: 5rem;
   font-weight: $extrabold;
+  line-height: 120%;
 
   &--bran {
     color: $color-bran;
+    font-size: 4.75rem;
   }
 }
 
@@ -103,34 +107,35 @@
 .hiking__desc-trait {
   width: 30%;
   h4 {
-    font-size: 1.763rem;
+    font-size: 2.0625rem;
     color: $color-bran;
     margin-bottom: 20px;
     font-weight: $bold;
   }
 
   p {
+    font-size: 1.1875rem;
     color: #333d42;
   }
 }
 
 .hiking__desc-quote {
-  width: 55%;
+  padding: 0 280px;
   margin: 0 auto;
-  margin-top: 450px;
+  margin-top: 200px;
   text-align: center;
   color: #3f3f3f;
   h3 {
-    font-size: 4.375rem;
+    font-size: 6.25rem;
     font-weight: $bold;
   }
   p {
-    font-size: 1.25rem;
+    font-size: 1.5625rem;
     font-weight: $semibold;
   }
   h6 {
     margin-top: 35px;
-    font-size: 1.063rem;
+    font-size: 1.3125rem;
     font-weight: $bold;
   }
 }
@@ -138,5 +143,5 @@
 .hiking__desc-shadow {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -100px;
 }

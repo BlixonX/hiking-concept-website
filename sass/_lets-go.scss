@@ -15,7 +15,7 @@
 
 .lets-go__title {
   text-align: center;
-  font-size: 3.24rem;
+  font-size: 3.9375rem;
   font-weight: $extrabold;
   color: $color-indian-yellow;
   margin-bottom: 35px;
@@ -23,15 +23,15 @@
 
 .lets-go__desc {
   text-align: center;
-  margin: 0 30%;
-  font-size: 1.2rem;
+  margin: 0 350px;
+  font-size: 1.6875rem;
   color: $color-settlement;
 }
 
 .lets-go__cards {
   display: flex;
   width: min-content;
-  margin-top: 80px;
+  margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
@@ -50,27 +50,27 @@
 
   h5 {
     font-weight: $bold;
-    font-size: 1.813rem;
+    font-size: 1.8125rem;
     margin: 40px 0 20px 15px;
   }
 
   p {
     font-weight: $regular;
     margin-left: 15px;
-    font-size: 1.25rem;
+    font-size: 1.4375rem;
   }
 }
 
 .lets-go__more {
   display: block;
-  width: 334px;
+  width: 335px;
   background-color: $color-settlement;
   border-radius: 200px;
   border: none;
   font-weight: $extrabold;
-  font-size: 1.25rem;
+  font-size: 1.4375rem;
   color: white;
-  padding: 25px 0;
+  padding: 22px 0;
   margin: 0 auto;
   text-align: center;
   text-decoration: none;
