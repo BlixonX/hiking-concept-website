@@ -54,3 +54,13 @@
   padding-right: 50px;
   color: $color-dark-gray;
 }
+
+@media screen and (max-width: $big-screen-resolution) {
+  .header__text blockquote {
+    display: none;
+  }
+  .header__text {
+    padding-bottom: 50px;
+    width: 800px;
+  }
+}

@@ -59,3 +59,28 @@
   text-align: center;
   text-decoration: none;
 }
+
+@media screen and (max-width: $big-screen-resolution) {
+  .promo__block {
+    height: 550px;
+  }
+
+  .promo__block-heading {
+    font-size: 2.75rem;
+  }
+
+  .promo__block-desc {
+    font-size: 1.4rem;
+  }
+
+  .promo__block-more,
+  .promo__block .promo__block-more:first-of-type {
+    font-size: 1.2rem;
+    width: 250px;
+  }
+
+  .promo__block-promo,
+  img + .promo__block-promo {
+    padding: 0 75px;
+  }
+}

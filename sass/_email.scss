@@ -49,12 +49,13 @@
   border-radius: 100px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   margin-top: 55px;
   overflow: hidden;
 
   input {
     border: none;
-    flex-grow: 1;
+    width: calc(100% - 180px);
     padding-left: 30px;
     font-size: 1.5625rem;
     color: $color-dark-gray;
@@ -71,5 +72,15 @@
     font-weight: $bold;
     font-size: 1.5625rem;
     color: white;
+  }
+}
+
+@media screen and (max-width: $big-screen-resolution) {
+  .email__content {
+    margin: 0 100px;
+  }
+
+  .email__input {
+    width: 85%;
   }
 }

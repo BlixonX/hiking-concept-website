@@ -7,7 +7,7 @@
 
 .lets-go__shred {
   position: absolute;
-  top: -150px;
+  bottom: 100%;
   width: 100%;
   z-index: -1;
   filter: drop-shadow(0 -7px 3px rgb(0 0 0 / 15%));
@@ -80,4 +80,24 @@
   position: absolute;
   bottom: 5px;
   pointer-events: none;
+}
+
+@media screen and (max-width: $big-screen-resolution) {
+  .lets-go__card {
+    width: 250px;
+    height: 280px;
+
+    p {
+      display: none;
+    }
+
+    h5 {
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  .lets-go__desc {
+    margin: 0 150px;
+  }
 }

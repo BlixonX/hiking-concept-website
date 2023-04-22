@@ -145,3 +145,13 @@
   right: 0;
   bottom: -100px;
 }
+
+@media screen and (max-width: $big-screen-resolution) {
+  .hiking__text-paragraph {
+    padding: 0 125px;
+  }
+
+  .hiking__desc-quote {
+    padding: 0 50px;
+  }
+}
