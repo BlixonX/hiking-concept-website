@@ -31,11 +31,13 @@
 }
 
 .hiking__text-shred--top {
+  max-width: $big-screen-resolution;
   position: absolute;
   top: 0;
 }
 
 .hiking__text-shred--middle {
+  max-width: $big-screen-resolution;
   position: absolute;
   bottom: 0;
   transform: translateY(50%);
@@ -92,7 +94,7 @@
 .hiking__desc-shred {
   position: absolute;
   bottom: 100%;
-  width: 100%;
+  max-width: $big-screen-resolution;
   z-index: 1;
   filter: drop-shadow(0 -7px 3px rgba(0, 0, 0, 0.15));
 }
@@ -152,6 +154,20 @@
   }
 
   .hiking__desc-quote {
-    padding: 0 50px;
+    padding: 0 100px;
+    margin-top: 125px;
+  }
+
+  .hiking__desc-traits {
+    margin: 0 75px;
+  }
+
+  .hiking__text-shred--middle,
+  .hiking__text-shred--top {
+    width: 135%;
+  }
+
+  .hiking__desc-shred {
+    width: 130%;
   }
 }
