@@ -46,12 +46,15 @@
 
   img {
     width: 100%;
+    display: block;
   }
 
   h5 {
     font-weight: $bold;
     font-size: 1.8125rem;
     margin: 40px 0 20px 15px;
+    display: grid;
+    align-content: center;
   }
 
   p {
@@ -87,11 +90,17 @@
     width: 250px;
     height: 280px;
 
+    img {
+      height: 225px;
+      line-height: 0;
+    }
+
     p {
       display: none;
     }
 
     h5 {
+      height: 55px;
       margin: 0;
       text-align: center;
     }
@@ -99,5 +108,37 @@
 
   .lets-go__desc {
     margin: 0 150px;
+  }
+}
+
+@media screen and (max-width: $medium-screen-resolution) {
+  .lets-go__title {
+    font-size: 2.8125rem;
+  }
+
+  .lets-go__desc {
+    margin: 0 50px;
+    font-size: 1.3125rem;
+  }
+
+  .lets-go__cards {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  .lets-go__card {
+    &:not(:first-child) {
+      margin-top: 160px;
+    }
+
+    h5 {
+      font-size: 1.25rem;
+    }
+  }
+
+  .lets-go__more {
+    width: 200px;
+    font-size: 1.125rem;
+    padding: 14px 0;
   }
 }
