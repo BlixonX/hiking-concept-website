@@ -47,6 +47,7 @@
 }
 
 .email__input {
+  position: relative;
   width: 85%;
   height: 60px;
   background-color: white;
@@ -87,5 +88,30 @@
 
   .email__input {
     width: 85%;
+  }
+}
+
+@media screen and (max-width: $medium-screen-resolution) {
+  .email__input {
+    width: 95%;
+    overflow: visible;
+    input {
+      padding: 0;
+      border-radius: 100px;
+      width: 100%;
+      text-align: center;
+    }
+
+    button {
+      min-width: 180px;
+      width: auto;
+      margin-top: 15px;
+      padding: 8px 0;
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translateX(-50%);
+      border-radius: 100px;
+    }
   }
 }

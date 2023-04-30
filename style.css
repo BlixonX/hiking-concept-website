@@ -402,6 +402,21 @@ img + .promo__block-promo {
     padding: 0 75px;
   }
 }
+@media screen and (max-width: 1000px) {
+  .promo__block {
+    flex-direction: column;
+    height: auto;
+  }
+  .promo__block:not(:first-of-type) {
+    flex-direction: column-reverse;
+  }
+  .promo__block-image {
+    height: auto;
+  }
+  .promo__block-promo {
+    margin: 75px 0;
+  }
+}
 /******************\
   TEXT SUB-SECTION
 \******************/
@@ -420,6 +435,7 @@ img + .promo__block-promo {
   font-size: 3.625rem;
   margin-bottom: 30px;
   font-weight: 600;
+  text-align: center;
 }
 
 .hiking__text-paragraph {
@@ -562,6 +578,37 @@ img + .promo__block-promo {
     width: 130%;
   }
 }
+@media screen and (max-width: 1000px) {
+  .hiking__explore {
+    padding: 0;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .hiking__explore-text {
+    margin-top: 125px;
+    text-align: center;
+  }
+  .hiking__explore-text br {
+    display: none;
+  }
+  .hiking__text-paragraph {
+    padding: 0 50px;
+    font-size: 1.5rem;
+  }
+  .hiking__desc-traits {
+    flex-direction: column;
+  }
+  .hiking__desc-trait {
+    margin: 0 50px;
+    width: auto;
+  }
+  .hiking__desc-trait:not(:last-child) {
+    margin-bottom: 75px;
+  }
+  .hiking__desc-quote {
+    margin-top: 75px;
+  }
+}
 .email {
   position: relative;
   height: 1000px;
@@ -608,6 +655,7 @@ img + .promo__block-promo {
 }
 
 .email__input {
+  position: relative;
   width: 85%;
   height: 60px;
   background-color: white;
@@ -645,6 +693,29 @@ img + .promo__block-promo {
   }
   .email__input {
     width: 85%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .email__input {
+    width: 95%;
+    overflow: visible;
+  }
+  .email__input input {
+    padding: 0;
+    border-radius: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  .email__input button {
+    min-width: 180px;
+    width: auto;
+    margin-top: 15px;
+    padding: 8px 0;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border-radius: 100px;
   }
 }
 .footer {
@@ -725,6 +796,16 @@ img + .promo__block-promo {
   .footer__content li a {
     text-decoration: none;
     color: inherit;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__content-socials {
+    margin-bottom: 50px;
+    margin-right: 0;
   }
 }
 * {

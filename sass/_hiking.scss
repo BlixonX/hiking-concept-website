@@ -20,6 +20,7 @@
   font-size: 3.625rem;
   margin-bottom: 30px;
   font-weight: $semibold;
+  text-align: center;
 }
 
 .hiking__text-paragraph {
@@ -169,5 +170,42 @@
 
   .hiking__desc-shred {
     width: 130%;
+  }
+}
+
+@media screen and (max-width: $medium-screen-resolution) {
+  .hiking__explore {
+    padding: 0;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .hiking__explore-text {
+    margin-top: 125px;
+    text-align: center;
+    br {
+      display: none;
+    }
+  }
+
+  .hiking__text-paragraph {
+    padding: 0 50px;
+    font-size: 1.5rem;
+  }
+
+  .hiking__desc-traits {
+    flex-direction: column;
+  }
+
+  .hiking__desc-trait {
+    margin: 0 50px;
+    width: auto;
+    &:not(:last-child) {
+      margin-bottom: 75px;
+    }
+  }
+
+  .hiking__desc-quote {
+    margin-top: 75px;
   }
 }
