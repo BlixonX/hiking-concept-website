@@ -115,3 +115,17 @@
     }
   }
 }
+
+@media screen and (max-width: $small-screen-resolution) {
+  .email {
+    height: 800px;
+  }
+
+  .email__content {
+    margin: 0 20px;
+    margin-bottom: 75px;
+    h2 {
+      font-size: 50px;
+    }
+  }
+}

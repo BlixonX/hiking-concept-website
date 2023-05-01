@@ -104,18 +104,26 @@
   }
 }
 
-// TO BE USED FOR SMALL SCREENS
-// .promo__block-heading {
-//   font-size: 2rem;
-// }
+@media screen and (max-width: $small-screen-resolution) {
+  .promo__block-heading {
+    font-size: 2rem;
+  }
 
-// .promo__block-desc {
-//   font-size: 1rem;
-// }
+  .promo__block-desc {
+    font-size: 1rem;
+  }
 
-// .promo__block-more,
-// .promo__block .promo__block-more:first-of-type {
-//   font-size: 0.8rem;
-//   width: 175px;
-//   padding: 12px 0;
-// }
+  .promo__block-more,
+  .promo__block .promo__block-more:first-of-type {
+    font-size: 0.8rem;
+    width: 175px;
+    padding: 12px 0;
+    margin: 0 auto;
+  }
+
+  .promo__block-promo,
+  img + .promo__block-promo {
+    text-align: center;
+    padding: 0 20px;
+  }
+}

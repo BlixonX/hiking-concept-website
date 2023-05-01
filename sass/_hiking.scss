@@ -60,6 +60,7 @@
   display: flex;
   position: relative;
   background: url("../assets/hiking/background-explore.png") no-repeat center;
+  background-size: cover;
   height: 1200px;
   justify-content: right;
   align-items: center;
@@ -95,6 +96,7 @@
 .hiking__desc-shred {
   position: absolute;
   bottom: 100%;
+  width: 100%;
   max-width: $big-screen-resolution;
   z-index: 1;
   filter: drop-shadow(0 -7px 3px rgba(0, 0, 0, 0.15));
@@ -207,5 +209,46 @@
 
   .hiking__desc-quote {
     margin-top: 75px;
+  }
+}
+
+@media screen and (max-width: $small-screen-resolution) {
+  .hiking__text {
+    height: 800px;
+  }
+
+  .hiking__text-heading {
+    font-size: 40px;
+  }
+
+  .hiking__text-paragraph {
+    padding: 0 20px;
+  }
+
+  .hiking__desc-traits {
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .hiking__desc-trait {
+    margin: 0 20px 75px 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .hiking__desc-quote {
+    padding: 0 20px;
+  }
+
+  .hiking__explore {
+    height: 600px;
+  }
+
+  .hiking__explore-text,
+  .hiking__explore-text--bran {
+    margin-top: 80px;
+    font-size: 40px;
   }
 }

@@ -116,6 +116,28 @@
     padding-left: 2.5rem;
   }
 }
+@media screen and (max-width: 600px) {
+  .nav__logo,
+  .nav__links li:last-of-type {
+    display: none;
+  }
+  .nav {
+    padding: 0;
+    padding-top: 30px;
+  }
+  .nav__links {
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0;
+    font-size: 2.7vw;
+  }
+  .nav__links li {
+    margin: 0 5px !important;
+  }
+  .nav__shred {
+    width: 700px;
+  }
+}
 .header {
   position: relative;
 }
@@ -183,6 +205,9 @@
   }
 }
 @media screen and (max-width: 1000px) {
+  .header__text {
+    width: 100%;
+  }
   .header__text h1 {
     font-size: 3.125rem;
   }
@@ -194,6 +219,29 @@
     margin-top: 30px;
     width: 155px;
     padding: 8px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header__background {
+    height: 400px;
+    object-fit: cover;
+  }
+  .header__text {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .header__text h1 {
+    text-align: center;
+    font-size: 2.1875rem;
+  }
+  .header__text h3 {
+    font-size: 16px;
+    color: #fefdfd;
+    text-shadow: black 1px 0px 0px, black 0.540302px 0.841471px 0px, black -0.416147px 0.909297px 0px, black -0.989992px 0.14112px 0px, black -0.653644px -0.756802px 0px, black 0.283662px -0.958924px 0px, black 0.96017px -0.279415px 0px;
+  }
+  .header__text a {
+    margin-top: 10px;
   }
 }
 .lets-go {
@@ -325,6 +373,17 @@
     padding: 14px 0;
   }
 }
+@media screen and (max-width: 600px) {
+  .lets-go {
+    padding-bottom: 100px;
+  }
+  .lets-go__desc {
+    margin: 0 20px;
+  }
+  .lets-go__card {
+    margin: 0 20px;
+  }
+}
 .promo__block {
   display: flex;
   height: 780px;
@@ -417,6 +476,26 @@ img + .promo__block-promo {
     margin: 75px 0;
   }
 }
+@media screen and (max-width: 600px) {
+  .promo__block-heading {
+    font-size: 2rem;
+  }
+  .promo__block-desc {
+    font-size: 1rem;
+  }
+  .promo__block-more,
+  .promo__block .promo__block-more:first-of-type {
+    font-size: 0.8rem;
+    width: 175px;
+    padding: 12px 0;
+    margin: 0 auto;
+  }
+  .promo__block-promo,
+  img + .promo__block-promo {
+    text-align: center;
+    padding: 0 20px;
+  }
+}
 /******************\
   TEXT SUB-SECTION
 \******************/
@@ -474,6 +553,7 @@ img + .promo__block-promo {
   display: flex;
   position: relative;
   background: url("../assets/hiking/background-explore.png") no-repeat center;
+  background-size: cover;
   height: 1200px;
   justify-content: right;
   align-items: center;
@@ -507,6 +587,7 @@ img + .promo__block-promo {
 .hiking__desc-shred {
   position: absolute;
   bottom: 100%;
+  width: 100%;
   max-width: 1440px;
   z-index: 1;
   filter: drop-shadow(0 -7px 3px rgba(0, 0, 0, 0.15));
@@ -607,6 +688,38 @@ img + .promo__block-promo {
   }
   .hiking__desc-quote {
     margin-top: 75px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hiking__text {
+    height: 800px;
+  }
+  .hiking__text-heading {
+    font-size: 40px;
+  }
+  .hiking__text-paragraph {
+    padding: 0 20px;
+  }
+  .hiking__desc-traits {
+    text-align: center;
+    margin: 0 20px;
+  }
+  .hiking__desc-trait {
+    margin: 0 20px 75px 20px;
+  }
+  .hiking__desc-trait:last-child {
+    margin-bottom: 0;
+  }
+  .hiking__desc-quote {
+    padding: 0 20px;
+  }
+  .hiking__explore {
+    height: 600px;
+  }
+  .hiking__explore-text,
+  .hiking__explore-text--bran {
+    margin-top: 80px;
+    font-size: 40px;
   }
 }
 .email {
@@ -718,6 +831,18 @@ img + .promo__block-promo {
     border-radius: 100px;
   }
 }
+@media screen and (max-width: 600px) {
+  .email {
+    height: 800px;
+  }
+  .email__content {
+    margin: 0 20px;
+    margin-bottom: 75px;
+  }
+  .email__content h2 {
+    font-size: 50px;
+  }
+}
 .footer {
   display: flex;
   height: 720px;
@@ -806,6 +931,34 @@ img + .promo__block-promo {
   .footer__content-socials {
     margin-bottom: 50px;
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 0;
+  }
+  .footer__content h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .footer__content p {
+    font-size: 0.875rem;
+  }
+  .footer__content ul {
+    list-style-type: none;
+  }
+  .footer__content li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .footer__content li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .footer__content-socials {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
   }
 }
 * {
